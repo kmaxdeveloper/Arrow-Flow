@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tutorialOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/surface_overlay"
+        android:visibility="gone">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_32"
+            android:layout_marginEnd="@dimen/spacing_32"
+            app:cardBackgroundColor="@color/surface_main"
+            app:cardCornerRadius="@dimen/radius_24"
+            app:cardElevation="@dimen/card_elevation_high"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_24">
+
+                <TextView
+                    android:id="@+id/tvTutorialTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tutorial_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTutorialStep1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_16"
+                    android:gravity="center"
+                    android:text="@string/tutorial_step1"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/body_text_size" />
+
+                <TextView
+                    android:id="@+id/tvTutorialStep2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_8"
+                    android:gravity="center"
+                    android:text="@string/tutorial_step2"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/body_text_size" />
+
+                <TextView
+                    android:id="@+id/tvTutorialStep3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_8"
+                    android:gravity="center"
+                    android:text="@string/tutorial_step3"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/body_text_size" />
+
+                <TextView
+                    android:id="@+id/tvTutorialStep4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_8"
+                    android:gravity="center"
+                    android:text="@string/tutorial_step4"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/body_text_size" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTutorialOk"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_24"
+                    android:text="@string/got_it"
+                    style="@style/Widget.ArrowFlow.Button.Primary" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

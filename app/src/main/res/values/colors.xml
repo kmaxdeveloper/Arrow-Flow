@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ARROW ESCAPE - COMPETITOR PARITY PALETTE -->
+
+    <!-- Core Brand Colors -->
+    <color name="brand_navy">#0F172A</color> <!-- Primary Arrow Color -->
+    <color name="brand_blue">#3B82F6</color> <!-- UI Accents -->
+    <color name="brand_purple">#A855F7</color>
+    <color name="brand_gold">#FACC15</color>
+    <color name="brand_red">#EF4444</color>
+    <color name="brand_green">#22C55E</color>
+
+    <!-- Neutral Colors -->
+    <color name="brand_slate_50">#F8FAFC</color>
+    <color name="brand_slate_100">#F1F5F9</color>
+    <color name="brand_slate_200">#E2E8F0</color>
+    <color name="brand_slate_300">#CBD5E1</color>
+    <color name="brand_slate_400">#94A3B8</color>
+    <color name="brand_slate_600">#475569</color>
+    <color name="brand_slate_800">#1E293B</color>
+
+    <!-- Semantic Backgrounds -->
+    <color name="bg_game">#FFFFFF</color>
+    <color name="board_bg">#FFFFFF</color>
+    <color name="grid_dot">#E2E8F0</color>
+    <color name="surface_main">@color/brand_slate_50</color>
+    <color name="bg_surface">@color/brand_slate_50</color>
+
+    <!-- UI Elements -->
+    <color name="primary_cta">@color/brand_blue</color>
+    <color name="success">@color/brand_green</color>
+    <color name="error">@color/brand_red</color>
+    <color name="border_subtle">@color/brand_slate_200</color>
+
+    <!-- Typography -->
+    <color name="text_primary">@color/brand_slate_800</color>
+    <color name="text_secondary">@color/brand_slate_600</color>
+    <color name="text_tertiary">@color/brand_slate_400</color>
+    <color name="text_disabled">#CBD5E1</color>
+
+    <!-- Buttons -->
+    <color name="button_primary">@color/brand_blue</color>
+    <color name="button_primary_text">#FFFFFF</color>
+    <color name="button_secondary">@color/brand_slate_100</color>
+    <color name="button_hint_bg">@color/brand_slate_50</color>
+    <color name="button_tool_bg">@color/brand_slate_50</color>
+
+    <!-- HUD & Gameplay Specific -->
+    <color name="hud_badge_bg">#F1F5F9</color>
+    <color name="hud_bg">@color/hud_badge_bg</color>
+    <color name="heart_red">#EF4444</color>
+    <color name="heart_filled">@color/brand_red</color>
+    <color name="heart_empty">@color/brand_slate_200</color>
+    <color name="star_filled">@color/brand_gold</color>
+    <color name="board_glow">@color/brand_blue</color>
+
+    <!-- Overlays -->
+    <color name="overlay_win">#E6FFFFFF</color>
+    <color name="overlay_lose">#E6FFFFFF</color>
+    <color name="surface_overlay">#CCFFFFFF</color>
+
+    <!-- Compatibility Aliases -->
+    <color name="arrow_navy">@color/brand_navy</color>
+    <color name="accent_blue">@color/brand_blue</color>
+    <color name="grid_line">@color/brand_slate_100</color>
+    <color name="game_background">@color/bg_game</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

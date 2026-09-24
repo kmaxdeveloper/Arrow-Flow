@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Arrow Escape - Clean Light Theme) -->
+    <style name="Base.Theme.ArrowFlow" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_blue</item>
+        <item name="colorSecondary">@color/brand_purple</item>
+        <item name="android:windowBackground">@color/bg_game</item>
+        <item name="android:statusBarColor">@color/bg_game</item>
+        <item name="android:navigationBarColor">@color/bg_game</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.ArrowFlow" parent="Base.Theme.ArrowFlow" />
+
+    <!-- Typography Styles -->
+    <style name="TextAppearance.ArrowFlow.Title" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="TextAppearance.ArrowFlow.SectionTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+    </style>
+
+    <style name="TextAppearance.ArrowFlow.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/body_text_size</item>
+    </style>
+
+    <style name="TextAppearance.ArrowFlow.Secondary" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/caption_text_size</item>
+    </style>
+
+    <style name="TextAppearance.ArrowFlow.Button" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/body_text_size</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.ArrowFlow.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/button_primary</item>
+        <item name="android:textColor">@color/button_primary_text</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.ArrowFlow.Button</item>
+        <item name="android:textAppearance">@style/TextAppearance.ArrowFlow.Button</item>
+    </style>
+
+    <style name="Widget.ArrowFlow.Button.Secondary" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:backgroundTint">@color/button_secondary</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.ArrowFlow.Button</item>
+        <item name="android:textAppearance">@style/TextAppearance.ArrowFlow.Button</item>
+    </style>
+
+    <style name="ShapeAppearance.ArrowFlow.Button" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">@dimen/radius_16</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Widget.ArrowFlow.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/surface_main</item>
+        <item name="cardCornerRadius">@dimen/radius_20</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+- [x] Split levels.json into 100-level chunks in `assets/levels/`
+- [x] Implement on-demand chunk loading in `LevelRepository.kt`
+- [x] Implement "Veteran" flow-based generation in `LevelGenerator.kt`
+- [x] Regenerate all JSON chunks using the new Veteran logic
+- [x] Verify chunk loading transitions (Level 100 -> 101)
+- [x] Manual verification of high-density levels (via density script)
+- [x] Ensure LevelSelectFragment and GameFragment use new Repository logic

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_size"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/app_logo"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.ArrowFlow.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/tvStats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <TextView
+        android:id="@+id/tvStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_8"
+        android:background="@drawable/bg_hud_badge"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:text="12/100 Levels • 32 Stars" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStart"
+        style="@style/Widget.ArrowFlow.Button.Primary"
+        android:layout_width="260dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/start_game"
+        android:textSize="18sp"
+        app:cornerRadius="32dp"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/btnDailyPuzzle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStats" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDailyPuzzle"
+        style="@style/Widget.ArrowFlow.Button.Secondary"
+        android:layout_width="260dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/daily_puzzle"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/brand_purple"
+        app:cornerRadius="32dp"
+        app:icon="@android:drawable/ic_menu_my_calendar"
+        app:iconGravity="textStart"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnLevelSelect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart"
+        app:strokeColor="@color/brand_slate_200"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLevelSelect"
+        style="@style/Widget.ArrowFlow.Button.Secondary"
+        android:layout_width="260dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/level_select"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        app:backgroundTint="@color/brand_slate_50"
+        app:cornerRadius="32dp"
+        app:icon="@android:drawable/ic_dialog_dialer"
+        app:iconGravity="textStart"
+        app:iconTint="@color/text_primary"
+        app:layout_constraintBottom_toTopOf="@+id/btnSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDailyPuzzle"
+        app:strokeColor="@color/brand_slate_200"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSettings"
+        style="@style/Widget.ArrowFlow.Button.Secondary"
+        android:layout_width="260dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/settings"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        app:backgroundTint="@color/brand_slate_50"
+        app:cornerRadius="32dp"
+        app:icon="@android:drawable/ic_menu_manage"
+        app:iconGravity="textStart"
+        app:iconTint="@color/text_primary"
+        app:layout_constraintBottom_toTopOf="@+id/bannerContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLevelSelect"
+        app:strokeColor="@color/brand_slate_200"
+        app:strokeWidth="1dp" />
+
+    <FrameLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
